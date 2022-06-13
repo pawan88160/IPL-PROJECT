@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPL/PROJECT</title>
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="./index.html" class="logo">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmunnabhai.net%2Fwp-content%2Fuploads%2F2017%2F05%2Fipl-logo.png&f=1&nofb=1" alt="Indian Premium League">
+            </a>
+            <div>
+                <button id="add-player-btn" class="add-btn">Add New Player</button>
+            </div>
+        </nav>
+    </header>
+    <div id="add-player-form" class="hide main-form">
+        <div class="form">
+            <p>X</p>
+            <div>
+                <label for="playerName">Player Name</label>
+                <input type="text" name="playerName" id="playerName" placeholder="player name">
+            </div>
+            <div>
+                <label for="team">Team</label>
+                <input type="text" name="team" id="team" placeholder="enter team code eg, 'csk'">
+            </div>
+            <div>
+                <label for="price">Price</label>
+                <input type="text" name="price" id="price" placeholder="eg '12 crore/20 lakh'">
+            </div>
+            <div>
+                <label for="isPlaying">Playing Status</label>
+                <select name="isPlaying" id="isPlaying">
+                    <option value="playing">Playing</option>
+                    <option value="onbench">on-bench</option>
+                </select>
+            </div>
+            <div>
+                <label for="description">Role</label>
+                <select name="description" id="description">
+                    <option value="batsman">batsman</option>
+                    <option value="bowler">bowler</option>
+                    <option value="allrounder">all rounder</option>
+                </select>
+            </div>
+            <div>
+                <label for="photo">player image</label>
+                <input type="text" name="photo" id="photo" placeholder="image url">
+            </div>
+            <div>
+                <button id="submit">Submit</button>
+            </div>
+        </div>
+    </div>
+    <main>
+        <section id="team-page" class="team-page">
+            <article id="team-details"></article>
+            <article id="player-card" class="player-card-container"></article>
+        </section>
+    </main>
+    <script src="/teamdetails.js"></script>
+</body>
+
+</html>

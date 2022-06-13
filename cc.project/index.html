@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPL/PROJECT</title>
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="./index.html" class="logo">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmunnabhai.net%2Fwp-content%2Fuploads%2F2017%2F05%2Fipl-logo.png&f=1&nofb=1"
+                    alt="Indian Premium League">
+            </a>
+            <div class="search-box">
+                <input type="text" name="search-code" id="search-box" placeholder="Search Team"></input>
+                <button id="search-btn">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div>
+                <button id="add-team-btn" class="add-btn">Create New Team</button>
+            </div>
+        </nav>
+    </header>
+    <div id="add-player-form" class="hide main-form">
+        <div class="form">
+            <p>X</p>
+            <div>
+                <label for="teamName">Team Name</label>
+                <input type="text" name="teamName" id="teamName" placeholder="example 'rajasthan royals'">
+            </div>
+            <div>
+                <label for="teamCode">Team Code</label>
+                <input type="text" name="teamCode" id="teamCode" placeholder="example 'csk'">
+            </div>
+            <div>
+                <label for="teamLogo">Team Logo</label>
+                <input type="text" name="teamLogo" id="teamLogo" placeholder="paste image url">
+            </div>
+            <div>
+                <label for="topBatsman">Top Batsman</label>
+                <input type="text" name="topBatsman" id="topBatsman" placeholder="example 'ms dhoni'">
+            </div>
+            <div>
+                <label for="topBowler">Top Bowler</label>
+                <input type="text" name="topBowler" id="topBowler" placeholder="example 'kuldeep yadav'">
+            </div>
+            <div>
+                <label for="championshipWonCount">Championship Won Count</label>
+                <input type="number" name="championshipWonCount" id="championshipWonCount">
+            </div>
+            <div>
+                <button id="submit">Submit</button>
+            </div>
+        </div>
+    </div>
+    <main>
+        <section>
+            <h1 class="teams-heading">Teams</h1>
+        </section>
+        <section id="team-card" class="card"></section>
+    </main>
+    
+    <script src="/teams.js"></script>
+    <script src="/homepage.js"></script>
+</body>
+
+</html>
